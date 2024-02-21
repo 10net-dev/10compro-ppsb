@@ -1,166 +1,40 @@
 import Image from "next/image";
-import Feature1 from "../../public/assets/feature-1.svg";
-import Feature2 from "../../public/assets/feature-2.svg";
-import Feature3 from "../../public/assets/feature-3.svg";
-import Check from "../../public/assets/check.svg";
-import bluebutton from "../../public/assets/blue-button.svg";
-import greenButton from "../../public/assets/green-button.svg";
-import pinkButton from "../../public/assets/pink-button.svg";
+import configCopy from "../config";
 
 export function Features() {
   return (
-    <div className="flex flex-col gap-y-[56px] py-[56px] lg:py-[120px] lg:gap-y-[80px] ">
-      <div className="flex flex-col gap-x-6 sm:flex-row-reverse">
-        <Image
-          src={Feature1}
-          alt="Feature 1 image"
-          className="hidden w-1/2 sm:block"
-        />
-        <div className="sm:w-1/2 lg:py-[56px] lg:pr-[56px]">
-          <h3 className="font-medium text-[#0085FF] lg:text-[18px] ">
-            Sales Monitoring
-          </h3>
-          <h1 className="pt-[12px] text-2xl font-medium text-[#172026] lg:text-[42px] lg:leading-[58px]">
-            Simplify your sales monitoring
-          </h1>
-          <Image
-            src={Feature1}
-            alt="feature 1 image"
-            className="pt-[24px] sm:hidden"
-          />
-          <p className="py-[24px] text-[#36485C] lg:text-[18px]">
-            Stay on top of things and revamp your work process with our
-            game-changing feature. Get a birds eye view with our customizable
-            dashboard.
-          </p>
-
-          <ul className="flex flex-col gap-y-3 lg:text-[18px]">
-            <li className="flex items-center gap-x-2 text-[#36485C]">
-              <span>
-                <Image src={Check} alt="Checkmark" />
-              </span>
-              Lorem ipsum dolor sit amet
-            </li>
-            <li className="flex items-center gap-x-2 text-[#36485C]">
-              <span>
-                <Image src={Check} alt="Checkmark" />
-              </span>
-              Lorem ipsum dolor sit amet
-            </li>
-            <li className="flex items-center gap-x-2 text-[#36485C]">
-              <span>
-                <Image src={Check} alt="Checkmark" />
-              </span>
-              Lorem ipsum dolor sit amet
-            </li>
-          </ul>
-
-          <p className="flex items-center gap-x-2 pt-[24px] font-medium text-[#0085FF] lg:text-[18px]">
-            Learn More{" "}
-            <span>
-              <Image src={bluebutton} alt="Learn more" />
-            </span>
-          </p>
-        </div>
-      </div>
-
-      <div className="flex flex-col gap-x-6 sm:flex-row">
-        <Image
-          src={Feature2}
-          alt="Feature 1 image"
-          className="hidden w-1/2 sm:block"
-        />
-        <div className="sm:w-1/2 lg:py-[56px] lg:pl-[56px]">
-          <h3 className="font-medium text-[#00A424] lg:text-[18px] ">
-            Customer Support
-          </h3>
-          <h1 className="pt-[12px] text-2xl font-medium text-[#172026] lg:text-[42px] lg:leading-[58px]">
-            Get in touch with your customers
-          </h1>
-          <Image
-            src={Feature2}
-            alt="feature 1 image"
-            className="pt-[24px] sm:hidden"
-          />
-          <p className="py-[24px] text-[#36485C] lg:text-[18px]">
-            Stay on top of things and revamp your work process with our
-            game-changing feature. Get a birds eye view with our customizable
-            dashboard.
-          </p>
-
-          <ul className="flex flex-col gap-y-3 lg:text-[18px]">
-            <li className="flex items-center gap-x-2 text-[#36485C]">
-              <span>
-                <Image src={Check} alt="Checkmark" />
-              </span>
-              Lorem ipsum dolor sit amet
-            </li>
-            <li className="flex items-center gap-x-2 text-[#36485C]">
-              <span>
-                <Image src={Check} alt="Checkmark" />
-              </span>
-              Lorem ipsum dolor sit amet
-            </li>
-            <li className="flex items-center gap-x-2 text-[#36485C]">
-              <span>
-                <Image src={Check} alt="Checkmark" />
-              </span>
-              Lorem ipsum dolor sit amet
-            </li>
-          </ul>
-
-          <p className="flex items-center gap-x-2 pt-[24px] font-medium text-[#00A424] lg:text-[18px]">
-            Learn More{" "}
-            <span>
-              <Image src={greenButton} alt="Learn more" />
-            </span>
-          </p>
-        </div>
-      </div>
-
-      <div className="flex flex-col gap-x-6 sm:flex-row-reverse">
-        <Image
-          src={Feature3}
-          alt="Feature 1 image"
-          className="hidden w-1/2 sm:block"
-        />
-        <div className="sm:w-1/2 lg:py-[56px] lg:pr-[56px]">
-          <h3 className="font-medium text-[#EB2891] lg:text-[18px] ">
-            Growth Monitoring
-          </h3>
-          <h1 className="pt-[12px] text-2xl font-medium text-[#172026] lg:text-[42px] lg:leading-[58px]">
-            Monitor your sites new subscribers
-          </h1>
-          <Image
-            src={Feature3}
-            alt="feature 1 image"
-            className="pt-[24px] sm:hidden"
-          />
-          <p className="py-[24px] text-[#36485C] lg:text-[18px]">
-            Stay on top of things and revamp your work process with our
-            game-changing feature. Get a birds eye view with our customizable
-            dashboard.
-          </p>
-
-          <div className="flex w-full gap-x-[24px] ">
-            <div className="w-1/2 flex flex-col gap-y-3">
-              <h3 className="text-[20px] font-medium text-[#172026]">100+</h3>
-              <p className="text-[#36485C] ">Lorem ipsum dolor sit</p>
+    <div className="flex flex-col gap-y-[8px] py-[8px] lg:py-[40px] lg:gap-y-[20px] ">
+      <div className="container px-5 py-24 mx-auto">
+    <div className="flex flex-col text-center w-full mb-20">
+      <h2 className="text-xs text-lime-800 tracking-widest font-medium title-font mb-1">
+        {configCopy.feature.header}
+      </h2>
+      <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900">
+        {configCopy.feature.detail} 
+      </h1>
+    </div>
+    <div className="flex flex-wrap -m-4">
+      {configCopy.feature.list.map((item, index) => (
+        <div className="p-4 md:w-1/3" key={index}>
+          <div className="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
+            <div className="flex items-center mb-3">
+              <div className="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-lime-800 text-white flex-shrink-0">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                </svg>
+              </div>
+              <h2 className="text-gray-900 text-lg title-font font-medium">{item.title}</h2>
             </div>
-            <div className="w-1/2 flex flex-col gap-y-3">
-              <h3 className="text-[20px] font-medium text-[#172026]">800+</h3>
-              <p className="text-[#36485C]">Conse adipiscing elit</p>
+            <div className="flex-grow">
+              <p className="leading-relaxed text-base">{item.description}</p>
             </div>
           </div>
-
-          <p className="flex items-center gap-x-2 pt-[24px] font-medium text-[#EB2891] lg:text-[18px]">
-            Learn More{" "}
-            <span>
-              <Image src={pinkButton} alt="Learn more" />
-            </span>
-          </p>
         </div>
-      </div>
+      ))}
+      
+      
+    </div>
+  </div>
     </div>
   );
 }
