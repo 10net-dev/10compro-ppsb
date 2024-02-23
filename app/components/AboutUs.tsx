@@ -1,5 +1,6 @@
 import Image from "next/image";
 import configCopy from "../config";
+import ppsb2 from "./../../public/assets/ppsb-2.jpg"
 
 export function AboutUs() {
   return (
@@ -7,7 +8,11 @@ export function AboutUs() {
       
       <div className="flex flex-col gap-x-6 sm:flex-row gap-y-4">
         <div className="">
-          <img className="object-cover object-center rounded" alt="hero" src="https://dummyimage.com/720x600" />
+          
+        <Image className="object-cover object-center rounded" 
+          width="720" height="600"
+          alt="hero" src={ppsb2} />
+
         </div>
         
         <div className="sm:w-1/2 lg:py-[56px] lg:pl-[56px]">

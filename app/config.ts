@@ -2,8 +2,8 @@
 
 const configCopy = {
     hero:{
-        header1: "Nikmati Istirahat Anda di",
-        header2: "Rest Area KM 260B Banjaratma",
+        header1: "Nikmati Istirahat Anda",
+        header2: "Di Rest Area KM 260B Banjaratma",
         detail: "Temukan kenyamanan dan dukungan bagi UMKM lokal di tempat kami. Kunjungan Anda berarti semangat bagi komunitas yang berdaya!"
     },
     aboutUs: { 
